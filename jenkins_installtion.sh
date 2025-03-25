@@ -12,9 +12,8 @@ handle_error() {
     exit 1
 }
 
-# Update system packages
 echo "Updating system packages..."
-sudo apt-get update -y || handle_error "Failed to update packages"
+sudo apt update -y || handle_error "Failed to update packages"
 #sudo apt upgrade -y || handle_error "Failed to upgrade packages"
 
 # Install Java
