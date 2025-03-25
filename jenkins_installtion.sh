@@ -14,8 +14,8 @@ handle_error() {
 
 # Update system packages
 echo "Updating system packages..."
-sudo apt update || handle_error "Failed to update packages"
-sudo apt upgrade -y || handle_error "Failed to upgrade packages"
+sudo apt-get update -y || handle_error "Failed to update packages"
+#sudo apt upgrade -y || handle_error "Failed to upgrade packages"
 
 # Install Java
 echo "Installing OpenJDK 11..."
